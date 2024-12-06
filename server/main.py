@@ -9,7 +9,7 @@ app.config['DEBUG'] = True  # Ativa o modo de depuração para desenvolvimento
 # Rota inicial (home)
 @app.route('/')
 def home():
-    return "Bem-vindo ao servidor Flask!"
+    return "Joao é bixa!"
 
 # Rota de exemplo para API (GET)
 @app.route('/api/v1/resource', methods=['GET'])
