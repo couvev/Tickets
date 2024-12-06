@@ -1,0 +1,163 @@
+.landingPage {
+  font-family: sans-serif;
+  background: #ffffff;
+  margin: 0;
+  padding: 0;
+}
+
+/* Hero Section */
+.heroSection {
+  background: url("https://picsum.photos/1600/900") no-repeat center/cover;
+  color: #fff;
+  min-height: 80vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 0 20px;
+  border-bottom-left-radius: 30px;
+  border-bottom-right-radius: 30px;
+}
+
+.heroContent h1 {
+  font-size: 3rem;
+  margin-bottom: 20px;
+}
+
+.heroContent p {
+  font-size: 1.2rem;
+  margin-bottom: 30px;
+}
+
+.heroButton {
+  background: #f3c404;
+  color: #0c0c0c;
+  padding: 15px 30px;
+  border-radius: 5px;
+  text-decoration: none;
+  font-weight: 600;
+  transition: background 0.3s;
+}
+
+.heroButton:hover {
+  background: #cfa200;
+}
+
+/* Events Section */
+.eventsSection {
+  padding: 60px 20px;
+  padding-top: 50px;
+  text-align: center;
+}
+
+.eventsSection h2 {
+  font-size: 2rem;
+  margin-bottom: 40px;
+  color: #0c0c0c;
+}
+
+.eventsContainer {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+}
+
+.eventCard {
+  background: #fff;
+  border-radius: 10px;
+  overflow: hidden;
+  width: 300px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  text-align: left;
+}
+
+.eventCard img {
+  width: 100%;
+  height: auto;
+}
+
+.eventCard h3 {
+  font-size: 1.2rem;
+  margin: 15px;
+  color: #0c0c0c;
+}
+
+.eventCard p {
+  margin: 0 15px 15px;
+  font-size: 0.9rem;
+  color: #555;
+}
+
+.eventCard button {
+  background: #f3c404;
+  border: none;
+  width: calc(100% - 30px);
+  margin: 0 15px 15px;
+  padding: 10px;
+  border-radius: 5px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.eventCard button:hover {
+  background: #cfa200;
+}
+
+/* About Section */
+.aboutSection {
+  padding: 60px 20px;
+  padding-top: 0px;
+  max-width: 800px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.aboutSection h2 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+  color: #0c0c0c;
+}
+
+.aboutSection p {
+  font-size: 1rem;
+  color: #333;
+  line-height: 1.6;
+}
+
+/* Contact Section */
+.contactSection {
+  background: #e0e0e0;
+  border-top-left-radius: 30px;
+  border-top-right-radius: 30px;
+  padding: 60px 20px;
+  padding-top: 20px;
+  text-align: center;
+}
+
+.contactSection h2 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+  color: #0c0c0c;
+}
+
+.contactSection p {
+  font-size: 1rem;
+  color: #333;
+  margin-bottom: 30px;
+}
+
+.contactButton {
+  background: #0c0c0c;
+  color: #fff;
+  padding: 15px 30px;
+  border-radius: 5px;
+  text-decoration: none;
+  font-weight: 600;
+  transition: background 0.3s;
+}
+
+.contactButton:hover {
+  background: #333;
+}
