@@ -1,3 +1,7 @@
+html {
+  scroll-behavior: smooth;
+}
+
 .landingPage {
   font-family: sans-serif;
   background: #ffffff;
@@ -45,9 +49,10 @@
 
 /* Events Section */
 .eventsSection {
-  padding: 60px 20px;
-  padding-top: 50px;
+  padding: 40px 0;
   text-align: center;
+  width: 90%;
+  margin: 0 auto;
 }
 
 .eventsSection h2 {
@@ -56,11 +61,23 @@
   color: #0c0c0c;
 }
 
+.carouselWrapper {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
 .eventsContainer {
   display: flex;
-  flex-wrap: wrap;
   gap: 20px;
-  justify-content: center;
+  overflow-x: hidden;
+  scroll-behavior: smooth;
+  width: 950px;
+  margin: 0 auto;
+  -webkit-overflow-scrolling: touch;
+  padding: 20px;
+  border-radius: 50px;
 }
 
 .eventCard {
@@ -68,6 +85,7 @@
   border-radius: 10px;
   overflow: hidden;
   width: 300px;
+  flex-shrink: 0;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   text-align: left;
 }
@@ -99,10 +117,37 @@
   font-weight: 600;
   cursor: pointer;
   transition: background 0.3s;
+  font-family: inherit;
 }
 
 .eventCard button:hover {
   background: #cfa200;
+}
+
+.arrowButton {
+  background: rgba(0, 0, 0, 0.5);
+  color: #fff;
+  border: none;
+  padding: 15px;
+  cursor: pointer;
+  font-size: 1.5rem;
+  position: absolute;
+  z-index: 2;
+  top: 50%;
+  transform: translateY(-50%);
+  border-radius: 10px;
+}
+
+.arrowButton:hover {
+  background: rgba(0, 0, 0, 0.7);
+}
+
+.arrowButton:first-of-type {
+  left: 15%; /* Ajuste a porcentagem desejada para aproximar */
+}
+
+.arrowButton:last-of-type {
+  right: 15%; /* Ajuste a porcentagem desejada para aproximar */
 }
 
 /* About Section */
@@ -156,6 +201,7 @@
   text-decoration: none;
   font-weight: 600;
   transition: background 0.3s;
+  font-family: inherit;
 }
 
 .contactButton:hover {

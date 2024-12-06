@@ -14,7 +14,7 @@ const LoginPage = () => {
   };
 
   return (
-    <div>
+    <div className="pageWrapper">
       <Navbar />
       <div className={styles.loginContainer}>
         <div className={styles.loginBox}>

@@ -9,10 +9,14 @@ const Navbar = () => {
       <div className={styles.logo}>SportTickets</div>
       <ul className={styles.navLinks}>
         <li>
-          <a href="#home">Início</a>
+          <a href="#home" onClick={() => navigate("/")}>
+            Início
+          </a>
         </li>
         <li>
-          <a href="#events">Eventos</a>
+          <a href="#events" onClick={() => navigate("/eventos")}>
+            Eventos
+          </a>
         </li>
         <li>
           <a href="#about">Sobre</a>

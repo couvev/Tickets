@@ -1,12 +1,30 @@
 .footer {
   background: #0c0c0c;
   color: #fff;
-  padding: 30px;
-  text-align: center;
+  padding: 20px;
   bottom: 0;
 }
 
+.footerContent {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
 .footerContent p {
+  flex: 1; /* O parágrafo ocupa todo o espaço disponível */
   margin: 5px 0;
   font-size: 0.9rem;
+  text-align: center; /* Centraliza o texto dentro do parágrafo */
+}
+
+.socialIcons a {
+  margin-left: 10px;
+  color: #fff;
+  font-size: 1.2rem;
+  transition: color 0.3s ease;
+}
+
+.socialIcons a:hover {
+  color: #ccc;
 }
